@@ -1,0 +1,1 @@
+define(["castrato"],function(n){var t={};return n.on("*",function(t,o,e){"console:post"!==e&&"notification:send"!==e&&n.emit("console:post",{type:"server",data:e+(t?"("+JSON.stringify(t)+")":""),debug:1}),o()}),t});

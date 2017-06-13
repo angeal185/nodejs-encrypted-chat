@@ -1,0 +1,22 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "encrypted chat app",
+  "main": "server.js",
+  "private": true,
+  "author": "ben eaves",
+  "license": "MIT",
+  "bin": "./server.js",
+  "dependencies": {
+    "node-static": "~0.7.9",
+    "socket.io": "~1.7.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-uglify": "^3.0.0",
+    "gutil": "^1.6.4"
+  }
+}

@@ -1,0 +1,1 @@
+define(function(){var n={},e=[],u=function(){return performance.now()||Date.now()};return n.add_function_delayed=function(n,r,f){e.push({func:r,pushed:u(),delay:n,data:f})},n.get=function(){return e},n.run=function(){for(var r,f,t=0;r=e[t++];)u()-r.pushed>r.delay&&(r.func(),e.splice(t-1,1));if(e.length){for(f=u();u()-f<1;);n.run()}},n});

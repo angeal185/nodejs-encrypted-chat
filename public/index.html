@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>ChatApp</title><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css"><link rel="stylesheet" type="text/css" href="app/css/default.css"><link rel="icon" type="image/png" href="app/img/icon/icon_32x32.png"><script src="app/js/jquery/jquery.js"></script><script src="app/js/materialize/materialize.min.js"></script><script src="app/js/vendor/requirejs-2.3.3/require.js"></script></head><body><div class="navbar-fixed"><nav><div class="nav-wrapper"><div class="container"><a href="#!" class="brand-logo center">Encrypted Chat App</a></div><a href="#modal1" class="right info-icn"><i class="fa fa-2x fa-cogs"></i></a></div></nav></div><div id="content"><div class="container"><div class="row"><div class="card main-panel"><ul id="chat"><li>APP> Loading...</li></ul></div></div></div><div id="input_wrapper" class="loading"><div id="loader"><span>|</span></div><input type="text" id="input"></div></div><div id="page-selection" class="center"></div><div id="modal1" class="modal bottom-sheet"><div class="modal-content"><h4>Info</h4><pre>
+
+encrypted chat app.                                      
+
+----------------------------------------------------------------------	
+                                                                       
+Client:                                                    			
+	/key			StrongPassphrase	Sets encryption key                 
+	/nick			NickName			Sets an optional nick                   
+	/mute  								Audio on									
+	/unmute  							Audio off									
+	/clear								Clear on-screen buffer                      
+	/help								This                                        
+	/title								Set your local page title					
+	/torch			AfterSeconds		Console messages are torched  		
+										after this amount of seconds 					
+										(default 600).									
+                                                                       
+Room:                                                    				
+	/join			RoomId			Join a room	                            
+	/leave							Leave the room                              
+	/count							Count participants                          
+                                                                       
+Host:  		                                                    	
+	/hosts							List available hosts                   		
+	/connect		HostIndex		Connect to selected host               	
+	/disconnect						Disconnect from host    			        
+                                                                       
+You can select any of the five last commands/messages with up/down key.
+                                                                       
+Due to security reasons, /key command is not saved, and command        
+history is  automatically cleared after one minute of inactivity.      
+                                                                       
+It is highly recommended to use incognito mode while chatting, 
+to prevent browsers from keeping history or cache.            
+
+----------------------------------------------------------------------			</pre></div><div class="modal-footer"><a href="#!" class="modal-action modal-close waves-effect btn-flat">Close</a></div></div><script src="app/js/app.js"></script><script>$(document).ready(function(){$(".modal").modal()})</script></body></html>

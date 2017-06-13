@@ -1,0 +1,24 @@
+{
+  "name": "chat-app",
+  "description": "chat-app",
+  "main": "server.js",
+  "authors": [
+    "ben eaves"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "socket.io",
+    "node.js"
+  ],
+  "homepage": "angeal185.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "4.7.0"
+  }
+}

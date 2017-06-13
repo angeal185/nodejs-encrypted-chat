@@ -1,0 +1,1 @@
+define({autoconnect:0,hosts:[{name:"default",host:"",path:"app/js/lib/settings.js"}]});

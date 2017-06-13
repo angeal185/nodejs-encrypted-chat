@@ -1,0 +1,1 @@
+define({title:"Chat-App - Online",ttl:6e5,motd:"<pre></pre>",nick:{maxLen:20,minLen:2},key:{maxLen:1024,minLen:8},room:{minLen:1,maxLen:64},notifications:{maxOnePerMs:3e3}});

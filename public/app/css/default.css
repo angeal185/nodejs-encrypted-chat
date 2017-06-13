@@ -1,0 +1,151 @@
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, html {
+	min-height: 100%;
+	min-width: 600px;
+	background-color: #202429;
+	margin:0px;
+	color: #00DD00;
+}
+
+nav {
+    background: black;
+    box-shadow: 0 0 30px black;
+}
+
+.page-footer {
+    padding-top: 20px;
+    background-color: #000000;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 0;
+    box-shadow: 0 0 20px black;
+    color: grey;
+	padding: 2em;
+}
+
+.card .main-panel {
+
+}
+#content{
+	padding: 3em 1em;
+}
+
+.modal.bottom-sheet {
+    opacity:.9;
+    max-height: 100%;
+    background: rgba(0, 0, 0, 0.37);
+	color:grey;
+}
+.modal .modal-footer {
+    background-color: #060808;
+}
+.modal .modal-footer .btn-flat {
+    color: #9E9E9E;
+}
+.info-icn{margin-right: 3em;}
+
+.good 		{ color: #99FF99; }
+.bad 		{ color: #ff7777; }
+.info 		{ color: #2196F3; }
+.neutral	{ color: #eeeeee; }
+
+/*------------------------------------*\
+	CHAT
+\*------------------------------------*/
+#chat {
+    position: inherit;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Messages */
+#chat li {
+	white-space: pre;
+	padding: 2px 15px;
+	color: #607D8B;
+}
+
+#chat li .timestamp {
+	color: #00BCD4;
+}
+
+/* Message types */
+/* the `i` element hold the actual message */
+#chat i {
+	font-style: normal;
+}
+#chat i.motd	{ color: #E91E63; display:inline-block; line-height: 12px !important; }
+#chat i.info	{ color: #4a5dca; }
+#chat i.server	{ color: #2196F3; }
+#chat i.error	{ color: #ff1100; }
+#chat i.message	{ color: #eeeeee; }
+#chat i.nick	{ color: #E91E63; }
+#chat i.fatal	{ color: #ff1100; }
+
+/*------------------------------------*\
+	INPUT & LOADER
+\*------------------------------------*/
+#input_wrapper {
+	right: 0;
+    bottom: 15px;
+    left: 0;
+    position: fixed;
+    height: 30px;
+}
+
+#input,
+#loader {
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+
+	border: 0;
+	outline: 0;
+
+	padding: 5px 5px 5px 15px;
+
+	color: #FFFFFF;
+	background-color:#272A2E;
+	height:30px;
+
+	border-top: 2px solid #153315;
+}
+
+#input { z-index: 1; }
+#loader { z-index: 0; line-height: 20px; font-size: 14px; font-weight: 100; font-family: tahoma;}
+
+/*------------------------------------*\
+	SPINNER
+\*------------------------------------*/
+.loading #loader { z-index: 2; }
+.loading #loader span {
+	margin-left:-2px;
+	-webkit-animation: rotation 1s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+
+::-webkit-scrollbar {
+  z-index: 30;
+  width: 5px;
+  height: 0;
+  y-index: hidden;
+}
+::-webkit-scrollbar-track {
+  background-color: #111;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2b2e33;
+}

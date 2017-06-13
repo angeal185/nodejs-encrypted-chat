@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ChatApp</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="app/css/default.css">
+	<link rel="icon" type="image/png" href="app/img/icon/icon_32x32.png">
+	<script src="app/js/jquery/jquery.js"></script>
+	<script src="app/js/materialize/materialize.min.js"></script>
+	<script src="app/js/vendor/requirejs-2.3.3/require.js"></script>
+</head>
+<body>
+{% include "partials/nav.njk" %}
+<div id="content">{% block content %}{% endblock %}</div>
+<div id="page-selection" class="center"></div>
+{% include "partials/modal.njk" %}
+<script src="app/js/app.js"></script>
+<script> 
+$(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+</body>
+</html>
